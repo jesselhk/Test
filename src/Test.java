@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Created by IntelliJ IDEA.
  * User: jesselim
@@ -24,7 +22,7 @@ public class Test {
         String a = "0102000001";
         String b = "";
 
-        if (a == null || a.length() != 10) {
+        if (a.length() != 10) {
             System.out.println("a is not 10 digit or empty!");
         } else {
             for (int i = 0; i < 10; i = i + 2) {
@@ -36,6 +34,9 @@ public class Test {
 
             System.out.println("RESULT = [" + b + "]");
         }
+
+        TestSingleton test2 = TestSingleton.getInstance();
+
     }
 
     private static String getCode(String code) {
